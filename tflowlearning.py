@@ -37,4 +37,3 @@ model.evaluate(x_test, y_test)
 
 #this image classifier is now trained
 #to 98% accuracy on this dataset.
-
