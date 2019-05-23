@@ -58,7 +58,9 @@ model.save('epic_num_reader.model')
 new_model = tf.keras.models.load_model('epic_num_reader.model')
 predictions = new_model.predict(x_test) 
 
-print(np.argmax(predictions[0]))
+#7,2,3,0,4,1, 
+print("Prediction: ")
+print(np.argmax(predictions[567]))
 
-plt.imshow(x_test[0],cmap=plt.cm.binary)
+plt.imshow(x_test[567],cmap=plt.cm.binary)
 plt.show() 
